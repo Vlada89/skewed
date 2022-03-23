@@ -1,0 +1,499 @@
+
+/* 
+    Created on : 05.01, 2022, 3:11:44 PM
+    Author     : frontend
+*/
+/*font-family: 'Roboto', sans-serif;*/
+.animation{
+    opacity: 0;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+    0%{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.slideLeft{
+    animation-name: slideLeft;
+    animation-duration: 1s;
+}
+
+
+@keyframes slideRight {
+    0%{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.slideRight{
+    animation-name: slideRight;
+    animation-duration: 1s;
+}
+
+@keyframes slideUp {
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.slideUp{
+    animation-name: slideUp;
+    animation-duration: 1s;
+}
+
+@keyframes slideDown {
+    0%{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.slideDown{
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+        transform:scale(0);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25;
+    color:#B1B1B1;
+    position: relative;
+    background-color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+video{
+    width: 70%;
+    height: auto;
+    object-fit: inherit;
+}
+
+.section-title{
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    text-transform:  capitalize;
+}
+.section-title:after{
+    font-family: 'Myriad Pro';
+    display: block;
+    content: "Dolor sit amet, consectetur adipiscing elit.";
+    font-size: 15px;
+    letter-spacing: -0.25px;
+    line-height: 28px;
+    color: #F7CC4B;
+    padding: 15px 0 0;
+}
+.btn-warning{
+    color: #F7CC4B;
+    line-height: 28px;
+    text-transform: none;
+    border:2px solid #F7CC4B;
+    background-color: transparent;
+    padding: 12px 39px;
+    width: 170px;
+    height: 40px;
+    padding: 5px;
+
+}
+.btn-dark{
+    height: 54px;
+    border:2px solid #222222;
+    background-color: #222222;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width: auto;
+}
+.carousel-control-prev{
+    transform: translateX(-50%);
+}
+.carousel-control-next{
+    transform: translateX(50%);
+}
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon{
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border-radius:50%;
+}
+/*HEADER*/
+header{
+    transition: linear 0.5s;
+}
+header.has-bg{
+    background-color: rgba(0,0,0,1);
+}
+header .navbar-brand img{
+    height: auto !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler span{
+    width: 35px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.navbar-toggler span:last-of-type{
+    margin-bottom: 0;
+}
+
+.navbar-dark .navbar-nav a.nav-link{
+    border-bottom: 1px solid #FFFFFF;
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.4s linear;
+}
+
+.navbar-dark .navbar-nav a.nav-link.active,
+.navbar-dark .navbar-nav a.nav-link:hover{
+    background-color: #F7CC4B;
+    color:#FFFFFF;
+}
+.navbar-dark .navbar-nav{
+    background-color: #333333
+}
+/*HERO*/
+.hero{
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+    padding: 50px 0 30px;
+}
+
+.hero p{
+    color: #FFFFFF;
+    font-family: "Myriad Pro";
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    padding: 70px 10px;
+}
+.hero p span{
+    color: #F7CC4B;
+    font-family: "Myriad Pro";
+}
+.hero .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius:  50%;
+    background-color: #FFFFFF;
+    border: 1px solid #ffffff;
+}
+
+/*ABOUT*/
+.about{
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+    padding: 50px 0 60px;
+
+}
+.about .about-content h2{
+    font-family: "Myriad Pro";
+    color: #222222;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+/*VIDEO*/
+.video{
+    background-color: #F7CC4B;
+    padding: 50px 0 60px;
+    clip-path: polygon(0 11%, 100% 0, 100% 89%, 0% 100%);
+
+}
+.video h2{
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.video .section-title:after{
+    color: #222222;
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+}
+/*TEAM*/
+.team{
+    padding: 30px 0;
+}
+
+.team h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #222222;
+}
+.team .section-title:after{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.team .team-item figure{
+    position: relative;
+    margin-inline:auto;
+    width: 220px;
+}
+.team .team-item figure img{
+    display:  block;
+}
+
+.team .team-item h4{
+    font-weight: 300;
+    color: #222222;
+}
+.team .team-item p{
+    color: #F7CC4B;
+    line-height: 28px;
+}
+.team .hover{
+    background-color: #F7CC4B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  100%;
+    height: 100%;
+    display: none;
+    border-radius: 50%;
+}
+.team .ratio:hover .hover{
+    display: flex;
+}
+
+.team .team-item h4:hover{
+    font-family: "Myriad Pro";
+}
+.team .hover .fab{
+    box-sizing: border-box;
+    height: 48px;
+    width: 48px;
+    line-height: 46px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    text-align: center;
+    margin-inline: 10px;
+    color: white;
+    font-size: 20px;
+}
+/*PARALLAX*/
+.parallax{
+    padding: 50px 20px ;
+    background: linear-gradient(to right,rgba(0, 0, 0,0.75),rgba(0, 0, 0,0.75)),url(../img/background/image-3.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 89%);
+
+}
+.parallax h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.parallax .section-title:after{
+    content: "(If you’re into that kind of thing)";
+}
+.parallax p{
+    font-size: 13px;
+}
+/*PRINCIPLES*/
+.principles{
+    padding: 60px 0 55px;
+
+}
+.principles .principles-content h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+/*PORTFOLIO*/
+.portfolio{
+    padding: 230px 0;
+    background-color: #F7CC4B;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+.portfolio h2{
+    color:  #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.portfolio h2:after{
+    content: "Some of our latest work";
+    color: #444444;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+}
+/*ACHIEVEMENTS*/
+.achievements{
+    padding: 30px 0;
+}
+.achievements h2{
+    font-size: 30px;
+    color: #222222;
+}
+.achievements .section-title:after{
+    content: "We keep track of this stuff!";
+}
+.achievements .counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #000000;
+    padding: 10px 0;
+}
+.achievements .counter .far{
+    font-size: 74px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.achievements .counter .num{
+    font-family: "Myriad Pro";
+    font-size: 84px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    color: #F7CC4B;
+    transition: 0.4s linear;
+    
+}
+.achievements .counter .num:hover{
+     transform: scaleX(1.5);
+     
+}
+.achievements .counter a{
+    line-height: 0;
+    color: #666666;
+}
+.achievements .ach-text p{
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    line-height: 25px;
+    padding: 30px 0 0;
+    color: #222222;
+}
+.achievements .ach-text p span{
+    color: #F7CC4B
+}
+.achievements .ach-text a{
+    color: #BBBBBB;
+}
+/*CONTACT*/
+.contact{
+    background-color: #F7CC4B;
+    padding: 35px 0;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+.contact h2{
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.contact .section-title:after{
+    content:"Subscribe to our mailing list";
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: #222222;
+}
+.contact .contact-wrapper{
+    max-width: 705px;
+    margin-inline:auto;
+}
+.contact .contact-form .form-control{
+    border: 2px solid #FFFFFF;
+    line-height: 50px;
+    background: transparent;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 10px;
+}
+.contact .contact-form .form-control::placeholder {
+  color: #FFFFFF;
+}
+.contact .contact-form .error-msg{
+    color:#000;
+    font-style: italic;
+}
+footer{
+    padding: 30px 0;
+    background-color: #222222;
+}
+footer .footer-icon a{
+    width: 48px;
+    height: 48px;
+    line-height: 46px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    margin-inline:5px;
+        
+}
+footer .footer-icon a:hover{
+    background-color: #f7cc4b;
+}
+
+footer p{
+    text-align: center;
+    color: #BBBBBB;
+}
+footer p span{
+    color: #F7CC4B;
+}

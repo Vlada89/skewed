@@ -1,0 +1,307 @@
+@media(min-width: 576px){
+    /*SM Breakpoint*/
+    .hero p{
+        font-size: 45px;
+        line-height: 45px;
+        padding: 100px 10px;
+    }
+    .about{
+        padding: 60px 0 70px;
+    }
+    .video{
+        padding: 70px 0 90px;
+
+    }
+    .team h2{
+        margin-bottom: 40px;
+    }
+    .parallax{
+        padding: 100px;
+    }
+    .parallax p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .principles{
+        padding: 60px 0 70px;
+    }
+    .portfolio{
+        padding: 175px 0 ;
+    }
+    .achievements .ach-text p{
+        padding: 50px 0 0;
+    }
+    .contact{
+        padding: 50px 0 35px;
+    }
+}
+
+
+@media(min-width: 768px){
+    /*MD Breakpoint*/
+    .hero p{
+        font-size: 55px;
+        line-height: 60px;
+        padding: 140px 10px;
+    }
+    .hero .carousel-indicators [data-bs-target]{
+        margin-bottom: 40px;
+    }
+    .about{
+        padding: 70px 0 80px;
+
+    }
+    .about .about-content h2{
+        margin-bottom: 30px;
+    }
+    .video{
+        padding: 100px 0 120px;
+
+    }
+    .team{
+        padding: 60px 0;
+    }
+
+    .team h2{
+        margin-bottom: 70px;
+    }
+    .parallax{
+        padding: 150px;
+    }
+    .principles{
+        padding: 80px 0 90px;
+    }
+    .principles .principles-content h2{
+        margin-bottom: 30px;
+    }
+    .portfolio{
+        padding: 168px 0;
+    }
+    .portfolio h2{
+        margin-bottom:40px;
+    }
+    .achievements{
+        padding: 50px 0;
+    }
+    .achievements .ach-text p{
+        padding: 80px 0 0;
+    }
+    .contact{
+        padding: 90px 0 40px;
+    }
+    footer{
+        padding: 40px 0;
+    }
+
+}
+
+
+@media(min-width: 992px){
+    /*LG Breakpoint*/
+    .section-title:after{
+        font-size: 20px;
+    }
+    .carousel{
+        overflow: hidden;
+    }
+    .carousel-control-prev{
+        transform: translateX(-50%);
+    }
+    .carousel-control-next{
+        transform: translateX(50%);
+    }
+    .carousel-control-prev .carousel-control-prev-icon,
+    .carousel-control-next .carousel-control-next-icon{
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+        background-color: grey;
+        border-radius:50%;
+        transition: 0.4s linear;
+    }
+    .carousel-control-prev .carousel-control-prev-icon:hover{
+        transform: translateX(30px);
+    }
+    .carousel-control-next .carousel-control-next-icon:hover{
+        transform: translateX(-30px);
+    }
+
+    .navbar-dark .navbar-nav a.nav-link{
+        border-bottom: none;
+        margin-inline:5px;
+    }
+    .navbar-dark .navbar-nav{
+    background-color: transparent;
+}
+    .hero p{
+        font-size: 70px;
+        line-height: 75px;
+        padding: 200px 10px;
+    }
+
+    .about{
+        padding: 90px 0 110px;
+    }
+    .about .about-content h2{
+        margin-bottom: 35px;
+        font-size: 45px;
+    }
+    .about .about-content p{
+        font-size: 14px;
+    }
+    .video h2{
+        font-size: 45px;
+        margin-bottom: 45px;
+    }
+    .video{
+        padding: 130px 0 150px;
+    }
+    .team{
+        padding: 80px 0;
+    }
+    .team .team-item{
+        padding: 0;
+        border: none;
+    }
+    .team h2{
+        font-size: 45px;
+        margin-bottom: 100px;
+    }
+    .parallax{
+        padding: 280px;
+    }
+    .parallax h2{
+        font-size: 45px;
+        margin-bottom: 90px;
+    }
+    .parallax p{
+        font-size: 16px;
+        margin-bottom: 47px;
+    }
+    .principles{
+        padding: 100px 0 120px;
+    }
+    .principles .principles-content p{
+        font-size: 14px;
+    }
+    .principles .principles-content h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    .portfolio h2{
+        margin-bottom: 50px;
+        font-size: 45px;
+    }
+    .achievements{
+        padding: 70px 0;
+    }
+    .achievements .counter{
+        border:none;
+        padding: 0;
+    }
+    .achievements h2{
+        font-size: 45px;
+    }
+    .achievements .ach-text p{
+        padding: 110px 60px 0;
+    }
+    .contact{
+        padding: 120px 60px;
+    }
+    .contact h2{
+        font-size: 45px;
+        margin-bottom: 45px;
+    }
+
+}
+
+
+@media(min-width: 1200px){
+    /*XL Breakpoint*/
+    .container{
+        max-width: 1114px;
+    }
+    .hero p{
+        font-size: 82px;
+        line-height: 98px;
+        padding: 250px 20px;
+    }
+    .hero .carousel-indicators [data-bs-target]{
+        margin-bottom: 40px;
+    }
+    .about{
+        padding: 120px 0 160px;
+
+    }
+    .about .about-content h2{
+        margin-bottom: 40px;
+        font-size: 60px;
+    }
+    .about .about-content p{
+        font-size: 16px;
+    }
+    .video{
+        padding: 160px 0 220px;
+    }
+    .video h2{
+        font-size: 60px;
+        margin-bottom: 60px
+    }
+    .team{
+        padding: 100px 0;
+    }
+    .team h2{
+        font-size: 60px;
+        margin-bottom: 140px;
+    }
+    .parallax{
+        padding: 310px;
+    }
+    .parallax h2{
+        font-size: 60px;
+    }
+    .principles{
+        padding: 110px 0 140px;
+    }
+    .principles .principles-content h2{
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    .principles .principles-content p{
+        font-size: 16px;
+    }
+    .portfolio h2{
+        margin-bottom: 90px;
+        font-size: 60px;
+    }
+    .achievements{
+        padding: 100px 0;
+    }
+    .achievements h2{
+        font-size: 60px;
+    }
+    .achievements .ach-text p{
+        padding: 170px 150px 0;
+    }
+    .contact{
+        padding: 160px 0 90px;
+    }
+    .contact h2{
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+    footer{
+        padding: 52px 0 60px;
+    }
+
+}
+
+
+@media(min-width: 1400px){
+    /*XXL Breakpoint*/
+    .container{
+        max-width: 1114px;
+    }
+
+
+}
